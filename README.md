@@ -1,3 +1,5 @@
+# The Medieval Kingdom Game
+## Contributing
 Every time you want to update code:
 1. Upload latest version from Github to Godot (preferably newest branch so that we can build off of stuff)
 2. Make changes
