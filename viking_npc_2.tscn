@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://le2awxrdtwhi"]
+
+[ext_resource type="Texture2D" uid="uid://dnbxrvh403lia" path="res://Game art/NPCs/VikingNPC2/VikingNPC2(1).png" id="1_ddjbh"]
+[ext_resource type="Script" path="res://viking_npc_2.gd" id="1_p0q1s"]
+[ext_resource type="Texture2D" uid="uid://dwolxy7p7r74x" path="res://Game art/NPCs/VikingNPC2/VikingNPC2(2).png" id="2_er1yf"]
+[ext_resource type="Texture2D" uid="uid://hv1cbwxln583" path="res://Game art/NPCs/VikingNPC2/VikingNPC2(3).png" id="3_1eckg"]
+[ext_resource type="Texture2D" uid="uid://cy44h6847auf7" path="res://Game art/NPCs/VikingNPC2/VikingNPC2(4).png" id="4_2scrp"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0psra"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ddjbh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_er1yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1eckg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2scrp")
+}],
+"loop": true,
+"name": &"VikingNPC2",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3lpyb"]
+size = Vector2(14, 13)
+
+[node name="VikingNPC2" type="StaticBody2D"]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("1_p0q1s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-4.76837e-07, -2.38419e-07)
+scale = Vector2(0.175313, 0.161133)
+sprite_frames = SubResource("SpriteFrames_0psra")
+animation = &"VikingNPC2"
+frame_progress = 0.311439
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 10.5)
+shape = SubResource("RectangleShape2D_3lpyb")

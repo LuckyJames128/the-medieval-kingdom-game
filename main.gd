@@ -9,7 +9,17 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	
-	if $player.position.x < $leader_viking.position.x:
-		$leader_viking/AnimatedSprite2D.flip_h = true
+	if $TileMap/player.position.x < $TileMap/leader_viking.position.x:
+		$TileMap/leader_viking/AnimatedSprite2D.flip_h = true
 	else:
-		$leader_viking/AnimatedSprite2D.flip_h = false
+		$TileMap/leader_viking/AnimatedSprite2D.flip_h = false
+		
+	if $TileMap/player.position.x < $TileMap/VikingNPC1.position.x:
+		$TileMap/VikingNPC1/AnimatedSprite2D.flip_h = true
+	else:
+		$TileMap/VikingNPC1/AnimatedSprite2D.flip_h = false
+	
+	if $TileMap/player.position.x < $TileMap/VikingNPC2.position.x:
+		$TileMap/VikingNPC2/AnimatedSprite2D.flip_h = true
+	else:
+		$TileMap/VikingNPC2/AnimatedSprite2D.flip_h = false

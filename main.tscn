@@ -1,10 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://b4hc7mf02t2av"]
+[gd_scene load_steps=12 format=3 uid="uid://b4hc7mf02t2av"]
 
 [ext_resource type="PackedScene" uid="uid://b357qtufnh36o" path="res://player.tscn" id="1_afw1i"]
 [ext_resource type="Script" path="res://main.gd" id="1_w32lg"]
 [ext_resource type="PackedScene" uid="uid://ose104o8ndbr" path="res://leader_viking.tscn" id="2_jmxqr"]
-[ext_resource type="Texture2D" uid="uid://1uxuf0vmc2jp" path="res://Game art/Tilemap/tilemap-with-grass-trees.png" id="4_rmkn0"]
-[ext_resource type="Texture2D" uid="uid://b2mkeq5s8wyfg" path="res://Game art/Tilemap/tilemap-lake-LK.png" id="5_xr6yn"]
+[ext_resource type="PackedScene" uid="uid://chlkq1emydkfc" path="res://viking_npc_1.tscn" id="4_3x3un"]
+[ext_resource type="Texture2D" uid="uid://6t4d8um730u4" path="res://Game art/Tilemap/tilemap-with-grass-trees.png" id="4_rmkn0"]
+[ext_resource type="Texture2D" uid="uid://jw6ijvhw5lf3" path="res://Game art/Tilemap/tilemap-lake-LK.png" id="5_xr6yn"]
+[ext_resource type="PackedScene" uid="uid://le2awxrdtwhi" path="res://viking_npc_2.tscn" id="7_3w14i"]
+[ext_resource type="PackedScene" uid="uid://cnhtxf6twwus6" path="res://leader_fishing.tscn" id="8_7p8j3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wpv2k"]
 texture = ExtResource("4_rmkn0")
@@ -413,18 +416,31 @@ sources/3 = SubResource("TileSetAtlasSource_13cii")
 [node name="Main" type="Node"]
 script = ExtResource("1_w32lg")
 
-[node name="player" parent="." instance=ExtResource("1_afw1i")]
-position = Vector2(291, 163)
-
-[node name="Camera2D" type="Camera2D" parent="player"]
-zoom = Vector2(2.25, 2.25)
-
-[node name="leader_viking" parent="." instance=ExtResource("2_jmxqr")]
-y_sort_enabled = true
-position = Vector2(456, 246)
-
 [node name="TileMap" type="TileMap" parent="."]
 y_sort_enabled = true
 tile_set = SubResource("TileSet_vkev5")
 format = 2
 layer_0/y_sort_enabled = true
+
+[node name="player" parent="TileMap" instance=ExtResource("1_afw1i")]
+position = Vector2(182, 163)
+
+[node name="Camera2D" type="Camera2D" parent="TileMap/player"]
+zoom = Vector2(2.25, 2.25)
+
+[node name="leader_viking" parent="TileMap" instance=ExtResource("2_jmxqr")]
+y_sort_enabled = true
+position = Vector2(207, 162)
+
+[node name="VikingNPC1" parent="TileMap" instance=ExtResource("4_3x3un")]
+position = Vector2(227, 161)
+
+[node name="VikingNPC2" parent="TileMap" instance=ExtResource("7_3w14i")]
+position = Vector2(248, 161)
+
+[node name="leader_fishing" parent="TileMap" instance=ExtResource("8_7p8j3")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(269, 165)
+collision_layer = 2
+collision_mask = 7

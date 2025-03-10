@@ -23,6 +23,8 @@ size = Vector2(14.9999, 17)
 
 [node name="leader_viking" type="StaticBody2D"]
 z_index = 1
+collision_layer = 2
+collision_mask = 7
 script = ExtResource("1_gi6r3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

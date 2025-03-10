@@ -1,0 +1,52 @@
+[gd_scene load_steps=10 format=3 uid="uid://cnhtxf6twwus6"]
+
+[ext_resource type="Texture2D" uid="uid://2xk4yeu8v0wg" path="res://Game art/NPCs/FishingCaptain/FishingCaptain1.png" id="1_8ptpg"]
+[ext_resource type="Script" path="res://leader_fishing.gd" id="1_c7cvh"]
+[ext_resource type="Texture2D" uid="uid://df86p75ahcsr3" path="res://Game art/NPCs/FishingCaptain/FishingCaptain2.png" id="2_50g0x"]
+[ext_resource type="Texture2D" uid="uid://ct4co0v5yyy2b" path="res://Game art/NPCs/FishingCaptain/FishingCaptain3.png" id="3_581uy"]
+[ext_resource type="Texture2D" uid="uid://vuru7jibqm38" path="res://Game art/NPCs/FishingCaptain/FishingCaptain4.png" id="4_186cq"]
+[ext_resource type="Texture2D" uid="uid://klmojvbtp0hj" path="res://Game art/NPCs/FishingCaptain/FishingCaptain5.png" id="5_jk5x8"]
+[ext_resource type="Texture2D" uid="uid://ctr2mpimcu50s" path="res://Game art/NPCs/FishingCaptain/FishingCaptain6.png" id="6_kc7x2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3y2sk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8ptpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_50g0x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_581uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_186cq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jk5x8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_kc7x2")
+}],
+"loop": true,
+"name": &"FishingCaptain",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pdcmh"]
+size = Vector2(11.5, 13)
+
+[node name="leader_fishing" type="StaticBody2D"]
+script = ExtResource("1_c7cvh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 1.90735e-06)
+scale = Vector2(0.13, 0.119629)
+sprite_frames = SubResource("SpriteFrames_3y2sk")
+animation = &"FishingCaptain"
+frame_progress = 0.836468
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.25, 6)
+shape = SubResource("RectangleShape2D_pdcmh")
