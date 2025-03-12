@@ -215,7 +215,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fb00c"]
-size = Vector2(15, 14)
+size = Vector2(18, 14)
 
 [node name="player" type="CharacterBody2D"]
 z_index = 1
@@ -231,7 +231,7 @@ animation = &"idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 z_index = 1
 y_sort_enabled = true
-position = Vector2(-0.999986, 7.49998)
+position = Vector2(-0.999981, 5.99999)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_fb00c")
 

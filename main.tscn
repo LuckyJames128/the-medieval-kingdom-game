@@ -2,12 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://b357qtufnh36o" path="res://player.tscn" id="1_afw1i"]
 [ext_resource type="Script" path="res://main.gd" id="1_w32lg"]
-[ext_resource type="PackedScene" uid="uid://ose104o8ndbr" path="res://NPC_Viking_Leader.tscn" id="2_jmxqr"]
-[ext_resource type="PackedScene" uid="uid://chlkq1emydkfc" path="res://NPC_Viking_1.tscn" id="4_3x3un"]
-[ext_resource type="Texture2D" uid="uid://7lu0m2wn47vf" path="res://Game art/Tilemap/tilemap-with-grass-trees.png" id="4_rmkn0"]
-[ext_resource type="Texture2D" uid="uid://cprskfyxi12sp" path="res://Game art/Tilemap/tilemap-lake-LK.png" id="5_xr6yn"]
-[ext_resource type="PackedScene" uid="uid://le2awxrdtwhi" path="res://NPC_Viking_2.tscn" id="7_3w14i"]
-[ext_resource type="PackedScene" uid="uid://cnhtxf6twwus6" path="res://NPC_Fishing_Leader.tscn" id="8_7p8j3"]
+[ext_resource type="PackedScene" uid="uid://ose104o8ndbr" path="res://leader_viking.tscn" id="2_jmxqr"]
+[ext_resource type="PackedScene" uid="uid://chlkq1emydkfc" path="res://viking_npc_1.tscn" id="4_3x3un"]
+[ext_resource type="Texture2D" uid="uid://6t4d8um730u4" path="res://Game art/Tilemap/tilemap-with-grass-trees.png" id="4_rmkn0"]
+[ext_resource type="Texture2D" uid="uid://jw6ijvhw5lf3" path="res://Game art/Tilemap/tilemap-lake-LK.png" id="5_xr6yn"]
+[ext_resource type="PackedScene" uid="uid://le2awxrdtwhi" path="res://viking_npc_2.tscn" id="7_3w14i"]
+[ext_resource type="PackedScene" uid="uid://cnhtxf6twwus6" path="res://leader_fishing.tscn" id="8_7p8j3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wpv2k"]
 texture = ExtResource("4_rmkn0")

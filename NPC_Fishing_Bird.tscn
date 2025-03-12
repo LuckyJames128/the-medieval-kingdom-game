@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://dkgli1f404sv0"]
+
+[ext_resource type="Script" path="res://NPC_Fishing_Bird.gd" id="1_cfwir"]
+[ext_resource type="Texture2D" uid="uid://ck02u3ry8rqhd" path="res://Game art/NPCs/FishVillaga2/FishVillaga2 (1).png" id="2_e8wgd"]
+[ext_resource type="Texture2D" uid="uid://dj4e8ea1qfpe2" path="res://Game art/NPCs/FishVillaga2/FishVillaga2 (2).png" id="3_3bc5y"]
+[ext_resource type="Texture2D" uid="uid://dps4i4pukylro" path="res://Game art/NPCs/FishVillaga2/FishVillaga2 (3).png" id="4_a7f11"]
+[ext_resource type="Texture2D" uid="uid://b60yyxkkppyy6" path="res://Game art/NPCs/FishVillaga2/FishVillaga2 (4).png" id="5_egwnk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g5u8v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_e8wgd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3bc5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_a7f11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_egwnk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4v3c2"]
+size = Vector2(10, 15)
+
+[node name="NPC_Fishing_Bird" type="StaticBody2D"]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("1_cfwir")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -3.38813e-21)
+scale = Vector2(0.117031, 0.120117)
+sprite_frames = SubResource("SpriteFrames_g5u8v")
+frame_progress = 0.883561
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 5.5)
+shape = SubResource("RectangleShape2D_4v3c2")

@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=3 uid="uid://dj3t3euu7spuh"]
+
+[ext_resource type="Script" path="res://NPC_Viking_3.gd" id="1_eji1s"]
+[ext_resource type="Texture2D" uid="uid://mkbr405iebf7" path="res://Game art/NPCs/VikingNPC3/VikingNPC3 (1,5).png" id="2_fs4q1"]
+[ext_resource type="Texture2D" uid="uid://bhnrmtwboldbq" path="res://Game art/NPCs/VikingNPC3/VikingNPC3 (2,4).png" id="3_vev2t"]
+[ext_resource type="Texture2D" uid="uid://doku5txqf4tw2" path="res://Game art/NPCs/VikingNPC3/VikingNPC3 (3).png" id="4_iu36a"]
+[ext_resource type="Texture2D" uid="uid://g3y7644cqhrl" path="res://Game art/NPCs/VikingNPC3/VikingNPC3 (6,8).png" id="5_d2lmu"]
+[ext_resource type="Texture2D" uid="uid://bcjfvkx7s2yqb" path="res://Game art/NPCs/VikingNPC3/VikingNPC3 (7).png" id="6_p47h2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d5c0x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_fs4q1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vev2t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_iu36a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vev2t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_fs4q1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_d2lmu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_p47h2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_d2lmu")
+}],
+"loop": true,
+"name": &"VikingNPC3",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l4xri"]
+size = Vector2(17, 17)
+
+[node name="NPC_Viking_3" type="StaticBody2D"]
+script = ExtResource("1_eji1s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.185, 0.162109)
+sprite_frames = SubResource("SpriteFrames_d5c0x")
+animation = &"VikingNPC3"
+frame_progress = 0.147303
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 8.5)
+shape = SubResource("RectangleShape2D_l4xri")

@@ -19,9 +19,9 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b87wj"]
-size = Vector2(14.9999, 17)
+size = Vector2(17, 17)
 
-[node name="leader_viking" type="StaticBody2D"]
+[node name="NPC_Viking_Leader" type="StaticBody2D"]
 z_index = 1
 collision_layer = 2
 collision_mask = 7
@@ -35,6 +35,6 @@ animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 y_sort_enabled = true
-position = Vector2(-1.50001, 8.5)
+position = Vector2(-1.50001, 7.49997)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_b87wj")

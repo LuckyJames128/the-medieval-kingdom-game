@@ -9,17 +9,22 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	
-	if $TileMap/player.position.x < $TileMap/leader_viking.position.x:
-		$TileMap/leader_viking/AnimatedSprite2D.flip_h = true
+	if $TileMap/player.position.x < $TileMap/NPC_Viking_Leader.position.x:
+		$TileMap/NPC_Viking_Leader/AnimatedSprite2D.flip_h = true
 	else:
-		$TileMap/leader_viking/AnimatedSprite2D.flip_h = false
+		$TileMap/NPC_Viking_Leader/AnimatedSprite2D.flip_h = false
 		
-	if $TileMap/player.position.x < $TileMap/VikingNPC1.position.x:
-		$TileMap/VikingNPC1/AnimatedSprite2D.flip_h = true
+	if $TileMap/player.position.x < $TileMap/NPC_Viking_1.position.x:
+		$TileMap/NPC_Viking_1/AnimatedSprite2D.flip_h = true
 	else:
-		$TileMap/VikingNPC1/AnimatedSprite2D.flip_h = false
+		$TileMap/NPC_Viking_1/AnimatedSprite2D.flip_h = false
 	
-	if $TileMap/player.position.x < $TileMap/VikingNPC2.position.x:
-		$TileMap/VikingNPC2/AnimatedSprite2D.flip_h = true
+	if $TileMap/player.position.x < $TileMap/NPC_Viking_2.position.x:
+		$TileMap/NPC_Viking_2/AnimatedSprite2D.flip_h = true
 	else:
-		$TileMap/VikingNPC2/AnimatedSprite2D.flip_h = false
+		$TileMap/NPC_Viking_2/AnimatedSprite2D.flip_h = false
+		
+	if $TileMap/player.position.x < $TileMap/NPC_Fishing_Leader.position.x:
+		$TileMap/NPC_Fishing_Leader/AnimatedSprite2D.flip_h = true
+	else:
+		$TileMap/NPC_Fishing_Leader/AnimatedSprite2D.flip_h = false

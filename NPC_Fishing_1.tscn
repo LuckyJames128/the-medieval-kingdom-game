@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://mr56owkptmdc"]
+
+[ext_resource type="Script" path="res://NPC_Fishing_1.gd" id="1_rqkr3"]
+[ext_resource type="Texture2D" uid="uid://c1lc8oj7yr4pe" path="res://Game art/NPCs/FishVillaga1/FishVillaga1 (1).png" id="2_kvnj3"]
+[ext_resource type="Texture2D" uid="uid://b2ia8hhtdwdrb" path="res://Game art/NPCs/FishVillaga1/FishVillaga1 (2).png" id="3_mb7gh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1c7dx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_kvnj3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mb7gh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1u8tx"]
+size = Vector2(13, 17)
+
+[node name="NPC_Fishing_1" type="StaticBody2D"]
+script = ExtResource("1_rqkr3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(4.76837e-07, 9.53674e-07)
+scale = Vector2(0.150508, 0.147461)
+sprite_frames = SubResource("SpriteFrames_1c7dx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 7.5)
+shape = SubResource("RectangleShape2D_1u8tx")
