@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://ose104o8ndbr"]
 
-[ext_resource type="Script" path="res://leader_viking.gd" id="1_gi6r3"]
+[ext_resource type="Script" path="res://NPC_Viking_Leader.gd" id="1_gi6r3"]
 [ext_resource type="Texture2D" uid="uid://c16k7idotulkx" path="res://Game art/NPCs/VikingIdle/VikingIdle1.png" id="1_uylna"]
 [ext_resource type="Texture2D" uid="uid://b7vli2x8nbh8b" path="res://Game art/NPCs/VikingIdle/VikingIdle2.png" id="2_ymp2s"]
 
