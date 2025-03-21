@@ -245,6 +245,7 @@ wait_time = 15.0
 [node name="actionable_finder" type="Area2D" parent="."]
 collision_layer = 0
 collision_mask = 8
+monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="actionable_finder"]
 position = Vector2(-2, 2)

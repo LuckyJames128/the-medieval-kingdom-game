@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://cp08vm1y11ae6"]
 
 [ext_resource type="Script" path="res://NPC_Fishing_Sus.gd" id="1_cwcd0"]
-[ext_resource type="Texture2D" uid="uid://dqiqyx0jv44vu" path="res://Game art/NPCs/SusFisha/SV-SusFisha1 (1).png" id="1_hjox3"]
-[ext_resource type="Texture2D" uid="uid://cielxurk4taqe" path="res://Game art/NPCs/SusFisha/SV-SusFisha1 (2).png" id="2_e6tmh"]
+[ext_resource type="Texture2D" uid="uid://xcwlsorgqqvq" path="res://Game art/NPCs/SusFisha/SV-SusFisha1 (1).png" id="1_hjox3"]
+[ext_resource type="Texture2D" uid="uid://cher6i167sfaw" path="res://Game art/NPCs/SusFisha/SV-SusFisha1 (2).png" id="2_e6tmh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_llbx0"]
 animations = [{
@@ -22,6 +22,8 @@ animations = [{
 size = Vector2(12, 13)
 
 [node name="NPC_Fishing_Sus" type="StaticBody2D"]
+z_index = 1
+y_sort_enabled = true
 collision_layer = 2
 collision_mask = 7
 script = ExtResource("1_cwcd0")

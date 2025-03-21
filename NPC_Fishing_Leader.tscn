@@ -1,12 +1,12 @@
 [gd_scene load_steps=10 format=3 uid="uid://cnhtxf6twwus6"]
 
-[ext_resource type="Texture2D" uid="uid://bianff5v24g10" path="res://Game art/NPCs/FishingCaptain/FishingCaptain1.png" id="1_8ptpg"]
+[ext_resource type="Texture2D" uid="uid://b2gusfjhsfwh4" path="res://Game art/NPCs/FishingCaptain/FishingCaptain1.png" id="1_8ptpg"]
 [ext_resource type="Script" path="res://NPC_Fishing_Leader.gd" id="1_c7cvh"]
-[ext_resource type="Texture2D" uid="uid://dtc85bdagb1x5" path="res://Game art/NPCs/FishingCaptain/FishingCaptain2.png" id="2_50g0x"]
-[ext_resource type="Texture2D" uid="uid://4lwefqqd1lcu" path="res://Game art/NPCs/FishingCaptain/FishingCaptain3.png" id="3_581uy"]
-[ext_resource type="Texture2D" uid="uid://cteeotg6u2bkp" path="res://Game art/NPCs/FishingCaptain/FishingCaptain4.png" id="4_186cq"]
-[ext_resource type="Texture2D" uid="uid://dit2q8rv7txn4" path="res://Game art/NPCs/FishingCaptain/FishingCaptain5.png" id="5_jk5x8"]
-[ext_resource type="Texture2D" uid="uid://d0cx2ded0uyr" path="res://Game art/NPCs/FishingCaptain/FishingCaptain6.png" id="6_kc7x2"]
+[ext_resource type="Texture2D" uid="uid://jhkbk2j7wltr" path="res://Game art/NPCs/FishingCaptain/FishingCaptain2.png" id="2_50g0x"]
+[ext_resource type="Texture2D" uid="uid://dgcg3s2iowsur" path="res://Game art/NPCs/FishingCaptain/FishingCaptain3.png" id="3_581uy"]
+[ext_resource type="Texture2D" uid="uid://h25fndij5cvq" path="res://Game art/NPCs/FishingCaptain/FishingCaptain4.png" id="4_186cq"]
+[ext_resource type="Texture2D" uid="uid://b6bxowu1am5cc" path="res://Game art/NPCs/FishingCaptain/FishingCaptain5.png" id="5_jk5x8"]
+[ext_resource type="Texture2D" uid="uid://c1pb6nl5il8u1" path="res://Game art/NPCs/FishingCaptain/FishingCaptain6.png" id="6_kc7x2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3y2sk"]
 animations = [{
@@ -38,6 +38,8 @@ animations = [{
 size = Vector2(14, 18.25)
 
 [node name="NPC_Fishing_Leader" type="StaticBody2D"]
+z_index = 1
+y_sort_enabled = true
 collision_layer = 2
 collision_mask = 7
 script = ExtResource("1_c7cvh")

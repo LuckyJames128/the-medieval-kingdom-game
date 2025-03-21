@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://mr56owkptmdc"]
 
 [ext_resource type="Script" path="res://NPC_Fishing_1.gd" id="1_rqkr3"]
-[ext_resource type="Texture2D" uid="uid://c1lc8oj7yr4pe" path="res://Game art/NPCs/FishVillaga1/FishVillaga1 (1).png" id="2_kvnj3"]
-[ext_resource type="Texture2D" uid="uid://b2ia8hhtdwdrb" path="res://Game art/NPCs/FishVillaga1/FishVillaga1 (2).png" id="3_mb7gh"]
+[ext_resource type="Texture2D" uid="uid://drdqi7ctye5hd" path="res://Game art/NPCs/FishVillaga1/FishVillaga1 (1).png" id="2_kvnj3"]
+[ext_resource type="Texture2D" uid="uid://0dcxnryo3hbt" path="res://Game art/NPCs/FishVillaga1/FishVillaga1 (2).png" id="3_mb7gh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1c7dx"]
 animations = [{
@@ -22,6 +22,10 @@ animations = [{
 size = Vector2(13, 17)
 
 [node name="NPC_Fishing_1" type="StaticBody2D"]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 2
+collision_mask = 7
 script = ExtResource("1_rqkr3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
