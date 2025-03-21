@@ -4,21 +4,26 @@ extends CharacterBody2D
 var timer_check = false
 var impatient_on = false
 
-@onready var actionable_finder: Area2D = $actionable_finder
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
-	
 
+@export var dialogue_resource: DialogueResource
+@export var dialogue_start: String = "Start"
+
+func action() -> void:
+	DialogueManager.show_example_dialogue_balloon(dialogue_resource, dialogue_start)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var velocity = Vector2.ZERO # The player's movement vector.
-	if Input.is_action_just_pressed("dialogue"):
-		var actionables = actionable_finder.get_overlapping_areas()
+	if Input.is_action_pressed("dialogue"):
+		var actionables = $actionable_finder.get_overlapping_areas()
 		if actionables.size() > 0:
 			actionables[0].action()
 			return
+		else:
+			pass
 	
 	if Input.is_action_pressed("move_right"):
 		velocity.x += 1

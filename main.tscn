@@ -47,7 +47,6 @@ position = Vector2(1291, 554)
 position = Vector2(1099, 471)
 
 [node name="Actionable" parent="TileMap/NPC_Fishing_Bird" instance=ExtResource("11_wueso")]
-position = Vector2(-14, -1)
 dialogue_resource = ExtResource("12_rrtsa")
 
 [node name="NPC_Fishing_Sus" parent="TileMap" instance=ExtResource("11_xj22y")]
