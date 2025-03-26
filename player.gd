@@ -3,8 +3,7 @@ extends CharacterBody2D
 @export var speed = 200
 var timer_check = false
 var impatient_on = false
-
-@onready var can_move = true
+var can_move = true
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
@@ -13,21 +12,23 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var velocity = Vector2.ZERO # The player's movement vector.
-	if Input.is_action_pressed("dialogue"):
-		var actionables = $actionable_finder.get_overlapping_areas()
-		if actionables.size() > 0:
-			actionables[0].action()
-			return
 	
 	if can_move == true:
 		if Input.is_action_pressed("move_right"):
+			print("right")
 			velocity.x += 1
 		if Input.is_action_pressed("move_left"):
+			print("left")
 			velocity.x -= 1
 		if Input.is_action_pressed("move_down"):
 			velocity.y += 1
 		if Input.is_action_pressed("move_up"):
 			velocity.y -= 1
+		if Input.is_action_pressed("dialogue"):
+			var actionables = $actionable_finder.get_overlapping_areas()
+			if actionables.size() > 0:
+				actionables[0].action()
+				return
 
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
@@ -75,4 +76,4 @@ func _on_state_dialogue_ended() -> void:
 
 func _on_state_dialogue_started() -> void:
 	print("start")
-	can_move = true
+	can_move = false
