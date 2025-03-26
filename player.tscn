@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://b357qtufnh36o"]
+[gd_scene load_steps=46 format=3 uid="uid://b357qtufnh36o"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_hul1n"]
 [ext_resource type="Texture2D" uid="uid://bbkfulrlciwqv" path="res://Game art/player/Idle/Idle1.png" id="2_3u8uu"]
@@ -217,6 +217,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fb00c"]
 size = Vector2(18, 14)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_l5ryu"]
+radius = 22.0907
+
 [node name="player" type="CharacterBody2D"]
 z_index = 1
 y_sort_enabled = true
@@ -237,6 +240,13 @@ rotation = 1.5708
 shape = SubResource("RectangleShape2D_fb00c")
 
 [node name="idle_timer" type="Timer" parent="."]
-wait_time = 8.0
+wait_time = 15.0
 
-[connection signal="timeout" from="idle_timer" to="." method="_on_idle_timer_timeout"]
+[node name="actionable_finder" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 8
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="actionable_finder"]
+position = Vector2(-2, 2)
+shape = SubResource("CircleShape2D_l5ryu")

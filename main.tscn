@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://b4hc7mf02t2av"]
+[gd_scene load_steps=14 format=3 uid="uid://b4hc7mf02t2av"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_w32lg"]
 [ext_resource type="PackedScene" uid="uid://ba4x44vyg0q8b" path="res://TileMap.tscn" id="2_ddlwf"]
@@ -14,9 +14,6 @@
 [ext_resource type="PackedScene" uid="uid://cp08vm1y11ae6" path="res://NPC_Fishing_Sus.tscn" id="11_xj22y"]
 [ext_resource type="Resource" uid="uid://drr5wwifbj1bu" path="res://dialogue/bird1.dialogue" id="12_rrtsa"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_8egbv"]
-radius = 21.0
-
 [node name="Main" type="Node"]
 script = ExtResource("1_w32lg")
 
@@ -27,14 +24,6 @@ position = Vector2(1372, 543)
 
 [node name="Camera2D" type="Camera2D" parent="TileMap/player"]
 zoom = Vector2(2.25, 2.25)
-
-[node name="actionable_finder" type="Area2D" parent="TileMap/player"]
-collision_layer = 0
-collision_mask = 8
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/player/actionable_finder"]
-position = Vector2(-3, 1)
-shape = SubResource("CircleShape2D_8egbv")
 
 [node name="NPC_Viking_Leader" parent="TileMap" instance=ExtResource("4_6vvhe")]
 position = Vector2(1191, 585)
@@ -55,7 +44,7 @@ position = Vector2(1294, 496)
 position = Vector2(1291, 554)
 
 [node name="NPC_Fishing_Bird" parent="TileMap" instance=ExtResource("10_4nlg7")]
-position = Vector2(1099, 471)
+position = Vector2(1406, 549)
 
 [node name="Actionable" parent="TileMap/NPC_Fishing_Bird" instance=ExtResource("11_wueso")]
 dialogue_resource = ExtResource("12_rrtsa")
