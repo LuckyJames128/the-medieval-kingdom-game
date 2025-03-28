@@ -1,12 +1,6 @@
 # The Medieval Kingdom
-## People you're allowed to merge:
-- LuckyJames128
-- Code2221
-- Half2beC00L
-- mikielmyers123
-- batchbridget
-#### Notice to those not listed:
-Please don't :(
+## Notice:
+thank you for noticing :D
 ## anyways
 
 Every time you want to update code:
