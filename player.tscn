@@ -42,6 +42,7 @@
 [ext_resource type="Texture2D" uid="uid://dau1shc3guo14" path="res://Game art/player/UpRun/UpRun6.png" id="40_hdjs5"]
 [ext_resource type="Texture2D" uid="uid://dqtyc1axdwcdb" path="res://Game art/player/UpRun/UpRun7.png" id="41_2ryx4"]
 [ext_resource type="Texture2D" uid="uid://dywa2xo00h2pl" path="res://Game art/player/UpRun/UpRun8.png" id="42_8x54i"]
+[ext_resource type="PackedScene" uid="uid://bwx8kbca5n8ns" path="res://actionable_finder.tscn" id="43_x3qir"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_78v54"]
 animations = [{
@@ -217,9 +218,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fb00c"]
 size = Vector2(18, 14)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_l5ryu"]
-radius = 22.0907
-
 [node name="player" type="CharacterBody2D"]
 z_index = 1
 y_sort_enabled = true
@@ -242,11 +240,4 @@ shape = SubResource("RectangleShape2D_fb00c")
 [node name="idle_timer" type="Timer" parent="."]
 wait_time = 15.0
 
-[node name="actionable_finder" type="Area2D" parent="."]
-collision_layer = 0
-collision_mask = 8
-monitorable = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="actionable_finder"]
-position = Vector2(-2, 2)
-shape = SubResource("CircleShape2D_l5ryu")
+[node name="actionable_finder" parent="." instance=ExtResource("43_x3qir")]

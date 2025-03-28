@@ -1,12 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://caxtqfx3lryd3"]
+[gd_scene load_steps=4 format=3 uid="uid://caxtqfx3lryd3"]
 
 [ext_resource type="Script" path="res://state.gd" id="1_e6d3j"]
 [ext_resource type="PackedScene" uid="uid://b357qtufnh36o" path="res://player.tscn" id="2_pnd88"]
+[ext_resource type="PackedScene" uid="uid://bwx8kbca5n8ns" path="res://actionable_finder.tscn" id="3_0b3bd"]
 
 [node name="state" type="Node"]
 script = ExtResource("1_e6d3j")
 
 [node name="player" parent="." instance=ExtResource("2_pnd88")]
 
-[connection signal="dialogue_ended" from="." to="player" method="_on_state_dialogue_ended"]
-[connection signal="dialogue_started" from="." to="player" method="_on_state_dialogue_started"]
+[node name="actionable_finder2" parent="player" instance=ExtResource("3_0b3bd")]
+
+[connection signal="dialogue_ended" from="." to="player/actionable_finder2" method="_on_state_dialogue_ended"]
+[connection signal="dialogue_started" from="." to="player/actionable_finder2" method="_on_state_dialogue_started"]

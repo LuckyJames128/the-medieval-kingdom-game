@@ -3,17 +3,16 @@ extends CharacterBody2D
 @export var speed = 200
 var timer_check = false
 var impatient_on = false
-var can_move = true
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	print("ready")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var velocity = Vector2.ZERO # The player's movement vector.
 	
-	if can_move == true:
+	if $actionable_finder.can_move == true:
 		if Input.is_action_pressed("move_right"):
 			print("right")
 			velocity.x += 1
@@ -24,11 +23,6 @@ func _process(delta):
 			velocity.y += 1
 		if Input.is_action_pressed("move_up"):
 			velocity.y -= 1
-		if Input.is_action_pressed("dialogue"):
-			var actionables = $actionable_finder.get_overlapping_areas()
-			if actionables.size() > 0:
-				actionables[0].action()
-				return
 
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
@@ -59,10 +53,16 @@ func _process(delta):
 			$AnimatedSprite2D.flip_v = false
 		
 	move_and_slide()
-	if can_move == false:
+	
+	# DEBUG
+	if $actionable_finder.can_move == false:
 		print("IM NOT MOVING")
-	if can_move == true:
+		velocity.x = 0
+		velocity.y = 0
+	if $actionable_finder.can_move == true:
 		print("IM MOVING")
+	if $actionable_finder.can_move == not $actionable_finder.can_move:
+		print("OH NO")
 
 func _on_idle_timer_timeout():
 	$AnimatedSprite2D.animation = "impatient_idle"
@@ -71,9 +71,7 @@ func _on_idle_timer_timeout():
 
 func _on_state_dialogue_ended() -> void:
 	print("stop")
-	can_move = false
-
+	$actionable_finder.can_move = true
 
 func _on_state_dialogue_started() -> void:
 	print("start")
-	can_move = false
