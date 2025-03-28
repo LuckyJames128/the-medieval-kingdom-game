@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duergfyn3gtu"
-path="res://.godot/imported/Impatient_Idle1.png-f35391f6e99d0c796ae287d8931e9df4.ctex"
+path="res://.godot/imported/Impatient_Idle1.png-681dd175c6a47fa9e5c40a7c8c45c593.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game art/Impatient_Idle/Impatient_Idle1.png"
-dest_files=["res://.godot/imported/Impatient_Idle1.png-f35391f6e99d0c796ae287d8931e9df4.ctex"]
+source_file="res://Game art/player/Impatient_Idle/Impatient_Idle1.png"
+dest_files=["res://.godot/imported/Impatient_Idle1.png-681dd175c6a47fa9e5c40a7c8c45c593.ctex"]
 
 [params]
 

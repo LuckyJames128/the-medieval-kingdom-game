@@ -91,6 +91,9 @@ var dialogue_line: DialogueLine:
 func _ready() -> void:
 	balloon.hide()
 	Engine.get_singleton("DialogueManager").mutated.connect(_on_mutated)
+	$state/player/AnimatedSprite2D.hide()
+	$state/player/actionable_finder/CollisionShape2D.disabled = true
+	$state/player/CollisionShape2D.disabled = true 
 
 	# If the responses menu doesn't have a next action set, use this one
 	if responses_menu.next_action.is_empty():

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7vli2x8nbh8b"
-path="res://.godot/imported/VikingIdle2.png-d8d74efccb947b60310093c3c0dff6de.ctex"
+path="res://.godot/imported/VikingIdle2.png-61626129479521caa86a89f6c3b31306.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game art/VikingIdle/VikingIdle2.png"
-dest_files=["res://.godot/imported/VikingIdle2.png-d8d74efccb947b60310093c3c0dff6de.ctex"]
+source_file="res://Game art/NPCs/VikingIdle/VikingIdle2.png"
+dest_files=["res://.godot/imported/VikingIdle2.png-61626129479521caa86a89f6c3b31306.ctex"]
 
 [params]
 

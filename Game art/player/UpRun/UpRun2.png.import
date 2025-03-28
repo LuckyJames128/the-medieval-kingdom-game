@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ywuud57v4pkg"
-path="res://.godot/imported/UpRun2.png-efc60c1f05d1c1ca13d27fc00ceb6b43.ctex"
+path="res://.godot/imported/UpRun2.png-9816da8b0354c79a3ae18776d1ce5af6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game art/UpRun/UpRun2.png"
-dest_files=["res://.godot/imported/UpRun2.png-efc60c1f05d1c1ca13d27fc00ceb6b43.ctex"]
+source_file="res://Game art/player/UpRun/UpRun2.png"
+dest_files=["res://.godot/imported/UpRun2.png-9816da8b0354c79a3ae18776d1ce5af6.ctex"]
 
 [params]
 
