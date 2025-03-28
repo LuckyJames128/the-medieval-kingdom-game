@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckkaa3dx3fqr"
-path="res://.godot/imported/Slash5.png-6423b6533825fed1a8122da173319e08.ctex"
+path="res://.godot/imported/Slash5.png-c62d0ddd86c3c3a97a5f543a17942f61.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game art/SLASHIN/Slash5.png"
-dest_files=["res://.godot/imported/Slash5.png-6423b6533825fed1a8122da173319e08.ctex"]
+source_file="res://Game art/player/SLASHIN/Slash5.png"
+dest_files=["res://.godot/imported/Slash5.png-c62d0ddd86c3c3a97a5f543a17942f61.ctex"]
 
 [params]
 

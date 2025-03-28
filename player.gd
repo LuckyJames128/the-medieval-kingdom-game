@@ -6,6 +6,9 @@ var impatient_on = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	print("ready")
+	var callable = Callable.create(self, "_on_dialogue_ended")
+	DialogueManager.connect("dialogue_ended", callable)
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -69,7 +72,7 @@ func _on_idle_timer_timeout():
 	impatient_on = true
 	
 
-func _on_state_dialogue_ended() -> void:
+func _on_dialogue_ended(resource: DialogueResource):
 	print("stop")
 	$actionable_finder.can_move = true
 

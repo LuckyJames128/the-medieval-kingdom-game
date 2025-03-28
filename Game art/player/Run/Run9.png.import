@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://y8wurcpe6upp"
-path="res://.godot/imported/Run9.png-b59dfa8d787a936c63d01e0cabe493c0.ctex"
+path="res://.godot/imported/Run9.png-12d9eadab41e3a0de0fd86599c485e70.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game art/Run/Run9.png"
-dest_files=["res://.godot/imported/Run9.png-b59dfa8d787a936c63d01e0cabe493c0.ctex"]
+source_file="res://Game art/player/Run/Run9.png"
+dest_files=["res://.godot/imported/Run9.png-12d9eadab41e3a0de0fd86599c485e70.ctex"]
 
 [params]
 

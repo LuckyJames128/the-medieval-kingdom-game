@@ -1,0 +1,410 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_61dny"]
+
+[resource]
+script = ExtResource("1_61dny")
+using_states = PackedStringArray()
+titles = {
+"checkpoint2": "7",
+"please": "20",
+"start": "2",
+"thankyou": "23"
+}
+character_names = PackedStringArray("Bird Man")
+first_title = "2"
+lines = {
+"1": {
+"id": "1",
+"next_id": "2",
+"text": "start",
+"type": &"title"
+},
+"10": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "10",
+"next_id": "20",
+"next_id_after": "20",
+"notes": "",
+"parent_id": "3",
+"responses": PackedStringArray("10", "11"),
+"tags": PackedStringArray(),
+"text": "Want me to find one for you?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Want me to find one for you?",
+"type": &"response"
+},
+"11": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "11",
+"next_id": "12",
+"next_id_after": "20",
+"notes": "",
+"parent_id": "3",
+"tags": PackedStringArray(),
+"text": "Damn... That sucks, sorry bro",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Damn... That sucks, sorry bro",
+"type": &"response"
+},
+"12": {
+"character": "Bird Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "12",
+"next_id": "13",
+"notes": "",
+"parent_id": "11",
+"tags": PackedStringArray(),
+"text": "WAIT, AREN'T YOU THE ONE WHO'S RUNNING AROUND MAKING PEACE AND STUFF?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "WAIT, AREN'T YOU THE ONE WHO'S RUNNING AROUND MAKING PEACE AND STUFF?",
+"type": &"dialogue"
+},
+"13": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "14",
+"next_id_after": "20",
+"notes": "",
+"parent_id": "11",
+"responses": PackedStringArray("13"),
+"tags": PackedStringArray(),
+"text": "...Yes?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...Yes?",
+"type": &"response"
+},
+"14": {
+"character": "Bird Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "14",
+"next_id": "15",
+"notes": "",
+"parent_id": "13",
+"tags": PackedStringArray(),
+"text": "CAN YOU FIND THE FLYING FISH AND BRING IT TO ME?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "CAN YOU FIND THE FLYING FISH AND BRING IT TO ME?",
+"type": &"dialogue"
+},
+"15": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "15",
+"next_id": "16",
+"next_id_after": "20",
+"notes": "",
+"parent_id": "13",
+"responses": PackedStringArray("15", "18"),
+"tags": PackedStringArray(),
+"text": "Uh... Yeah?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Uh... Yeah?",
+"type": &"response"
+},
+"16": {
+"character": "Bird Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "16",
+"next_id": "17",
+"notes": "",
+"parent_id": "15",
+"tags": PackedStringArray(),
+"text": "YES YES YES PLEASE YES YES",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "YES YES YES PLEASE YES YES",
+"type": &"dialogue"
+},
+"17": {
+"id": "17",
+"is_snippet": false,
+"next_id": "23",
+"parent_id": "15",
+"type": &"goto"
+},
+"18": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "18",
+"next_id": "19",
+"next_id_after": "20",
+"notes": "",
+"parent_id": "13",
+"tags": PackedStringArray(),
+"text": "No",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No",
+"type": &"response"
+},
+"19": {
+"id": "19",
+"next_id": "20",
+"parent_id": "18",
+"text": "please",
+"type": &"title"
+},
+"2": {
+"character": "Bird Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "2",
+"next_id": "3",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "HAVE I TOLD YOU ABOUT THIS REALLY COOL SOFT FISH SCALE FROM A MAGICAL FLYING FISH THAT I FOUND?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "HAVE I TOLD YOU ABOUT THIS REALLY COOL SOFT FISH SCALE FROM A MAGICAL FLYING FISH THAT I FOUND?",
+"type": &"dialogue"
+},
+"20": {
+"character": "Bird Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "20",
+"next_id": "21",
+"notes": "",
+"parent_id": "18",
+"tags": PackedStringArray(),
+"text": "PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE",
+"type": &"dialogue"
+},
+"21": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "21",
+"next_id": "22",
+"next_id_after": "23",
+"notes": "",
+"parent_id": "18",
+"responses": PackedStringArray("21", "26"),
+"tags": PackedStringArray(),
+"text": "Alright, fine",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Alright, fine",
+"type": &"response"
+},
+"22": {
+"id": "22",
+"next_id": "23",
+"parent_id": "21",
+"text": "thankyou",
+"type": &"title"
+},
+"23": {
+"character": "Bird Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "23",
+"next_id": "24",
+"notes": "",
+"parent_id": "21",
+"tags": PackedStringArray(),
+"text": "THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU",
+"type": &"dialogue"
+},
+"24": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "24",
+"next_id": "25",
+"next_id_after": "23",
+"notes": "",
+"parent_id": "21",
+"responses": PackedStringArray("24"),
+"tags": PackedStringArray(),
+"text": "*Walk Away*",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "*Walk Away*",
+"type": &"response"
+},
+"25": {
+"id": "25",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "24",
+"type": &"goto"
+},
+"26": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "26",
+"next_id": "27",
+"next_id_after": "20",
+"notes": "",
+"parent_id": "18",
+"tags": PackedStringArray(),
+"text": "No, sorry",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No, sorry",
+"type": &"response"
+},
+"27": {
+"id": "27",
+"is_snippet": false,
+"next_id": "20",
+"parent_id": "26",
+"type": &"goto"
+},
+"28": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "28",
+"next_id": "29",
+"next_id_after": "32",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I'm sorry, what?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I'm sorry, what?",
+"type": &"response"
+},
+"29": {
+"character": "Bird Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "29",
+"next_id": "30",
+"notes": "",
+"parent_id": "28",
+"tags": PackedStringArray(),
+"text": "SORRY I KNOW THAT I SPEAK REALLY FAST BUT I'M JUST SUPER EXCITED ABOUT THIS COOL THING I SAW!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "SORRY I KNOW THAT I SPEAK REALLY FAST BUT I'M JUST SUPER EXCITED ABOUT THIS COOL THING I SAW!",
+"type": &"dialogue"
+},
+"3": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"next_id_after": "7",
+"notes": "",
+"responses": PackedStringArray("3", "28"),
+"tags": PackedStringArray(),
+"text": "N- No...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "N- No...",
+"type": &"response"
+},
+"30": {
+"id": "30",
+"is_snippet": false,
+"next_id": "2",
+"parent_id": "28",
+"type": &"goto"
+},
+"32": {
+"id": "32",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"4": {
+"character": "Bird Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"notes": "",
+"parent_id": "3",
+"tags": PackedStringArray(),
+"text": "I FOUND THIS MAGICAL FLYING FISH THAT FLIES!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I FOUND THIS MAGICAL FLYING FISH THAT FLIES!",
+"type": &"dialogue"
+},
+"5": {
+"character": "Bird Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "6",
+"notes": "",
+"parent_id": "3",
+"tags": PackedStringArray(),
+"text": "IT FLEW OVER MY HEAD AND DROPPED THIS REALLY COOL SOFT STICK-LIKE FISH SCALE, AS WELL AS SOME COOL WHITE LIQUID!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "IT FLEW OVER MY HEAD AND DROPPED THIS REALLY COOL SOFT STICK-LIKE FISH SCALE, AS WELL AS SOME COOL WHITE LIQUID!",
+"type": &"dialogue"
+},
+"6": {
+"id": "6",
+"next_id": "7",
+"parent_id": "3",
+"text": "checkpoint2",
+"type": &"title"
+},
+"7": {
+"character": "Bird Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "8",
+"notes": "",
+"parent_id": "3",
+"tags": PackedStringArray(),
+"text": "I'VE ALWAYS BEEN SEARCHING FOR THAT COOL FLYING FISH!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I'VE ALWAYS BEEN SEARCHING FOR THAT COOL FLYING FISH!",
+"type": &"dialogue"
+},
+"8": {
+"character": "Bird Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"notes": "",
+"parent_id": "3",
+"tags": PackedStringArray(),
+"text": "I PLAN TO TRAVEL FAR AND WIDE TO RECREATE THAT FEELING OF FINDING THAT MAGICAL FLYING FISH!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I PLAN TO TRAVEL FAR AND WIDE TO RECREATE THAT FEELING OF FINDING THAT MAGICAL FLYING FISH!",
+"type": &"dialogue"
+},
+"9": {
+"character": "Bird Man",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "10",
+"notes": "",
+"parent_id": "3",
+"tags": PackedStringArray(),
+"text": "BUT... *sniff* WITH THE WAR ABOUT TO BREAK OUT, I MAY NEVER BE ABLE TO ACCOMPLISH MY DREAM *sniff*",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "BUT... *sniff* WITH THE WAR ABOUT TO BREAK OUT, I MAY NEVER BE ABLE TO ACCOMPLISH MY DREAM *sniff*",
+"type": &"dialogue"
+}
+}
+raw_text = "~ start
+Bird Man: HAVE I TOLD YOU ABOUT THIS REALLY COOL SOFT FISH SCALE FROM A MAGICAL FLYING FISH THAT I FOUND?
+- N- No...
+	Bird Man: I FOUND THIS MAGICAL FLYING FISH THAT FLIES!
+	Bird Man: IT FLEW OVER MY HEAD AND DROPPED THIS REALLY COOL SOFT STICK-LIKE FISH SCALE, AS WELL AS SOME COOL WHITE LIQUID!
+	~ checkpoint2
+	Bird Man: I'VE ALWAYS BEEN SEARCHING FOR THAT COOL FLYING FISH! 
+	Bird Man: I PLAN TO TRAVEL FAR AND WIDE TO RECREATE THAT FEELING OF FINDING THAT MAGICAL FLYING FISH!
+	Bird Man: BUT... *sniff* WITH THE WAR ABOUT TO BREAK OUT, I MAY NEVER BE ABLE TO ACCOMPLISH MY DREAM *sniff*
+	- Want me to find one for you?
+	- Damn... That sucks, sorry bro
+		Bird Man: WAIT, AREN'T YOU THE ONE WHO'S RUNNING AROUND MAKING PEACE AND STUFF?
+		- ...Yes?
+			Bird Man: CAN YOU FIND THE FLYING FISH AND BRING IT TO ME?
+			- Uh... Yeah?
+				Bird Man: YES YES YES PLEASE YES YES
+				=> thankyou
+			- No
+				~ please
+				Bird Man: PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE 
+				- Alright, fine
+					~ thankyou
+					Bird Man: THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU
+					- *Walk Away*
+						=> END 
+				- No, sorry
+					=> please
+- I'm sorry, what?
+	Bird Man: SORRY I KNOW THAT I SPEAK REALLY FAST BUT I'M JUST SUPER EXCITED ABOUT THIS COOL THING I SAW!
+	=> start
+
+=> END"
+metadata/dialogue_manager_version = "2.45.0"

@@ -1,0 +1,233 @@
+c693a20e708c4e09bfa9edf12a750cf8
+::res://::1743183622
+actionable.gd::GDScript::-1::1743183608::0::1::::<>Area2D<>::
+actionable.tscn::PackedScene::2378014932733240630::1743183606::0::1::::<><>::res://actionable.gd
+actionable_finder.gd::GDScript::-1::1743183608::0::1::::<>Area2D<>::
+actionable_finder.tscn::PackedScene::3980077506427129240::1743183608::0::1::::<><>::res://actionable_finder.gd
+game_state.gd::GDScript::-1::1743183608::0::1::::<>Node<>::
+game_state.tscn::PackedScene::457591810097038247::1743183608::0::1::::<><>::res://game_state.gd<>uid://b357qtufnh36o::::res://player.tscn
+main.gd::GDScript::-1::1743183608::0::1::::<>Node<>::
+main.tscn::PackedScene::4436527012041916713::1743183608::0::1::::<><>::res://main.gd<>uid://ba4x44vyg0q8b::::res://TileMap.tscn<>uid://b357qtufnh36o::::res://player.tscn<>uid://ose104o8ndbr::::res://NPC_Viking_Leader.tscn<>uid://chlkq1emydkfc::::res://NPC_Viking_1.tscn<>uid://le2awxrdtwhi::::res://NPC_Viking_2.tscn<>uid://dj3t3euu7spuh::::res://NPC_Viking_3.tscn<>uid://cnhtxf6twwus6::::res://NPC_Fishing_Leader.tscn<>uid://mr56owkptmdc::::res://NPC_Fishing_1.tscn<>uid://dkgli1f404sv0::::res://NPC_Fishing_Bird.tscn<>uid://846s8vwy733o::::res://actionable.tscn<>uid://cp08vm1y11ae6::::res://NPC_Fishing_Sus.tscn<>uid://drr5wwifbj1bu::::res://dialogue/bird1.dialogue
+NPC_Fishing_1.gd::GDScript::-1::1743183606::0::1::::<>StaticBody2D<>::
+NPC_Fishing_1.tscn::PackedScene::879238184657209696::1743183606::0::1::::<><>::res://NPC_Fishing_1.gd<>uid://drdqi7ctye5hd::::res://Game art/NPCs/FishVillaga1/FishVillaga1 (1).png<>uid://0dcxnryo3hbt::::res://Game art/NPCs/FishVillaga1/FishVillaga1 (2).png
+NPC_Fishing_Bird.gd::GDScript::-1::1743183606::0::1::::<>StaticBody2D<>::
+NPC_Fishing_Bird.tscn::PackedScene::7874220301938978819::1743183606::0::1::::<><>::res://NPC_Fishing_Bird.gd<>uid://ck02u3ry8rqhd::::res://Game art/NPCs/FishVillaga2/FishVillaga2 (1).png<>uid://dj4e8ea1qfpe2::::res://Game art/NPCs/FishVillaga2/FishVillaga2 (2).png<>uid://dps4i4pukylro::::res://Game art/NPCs/FishVillaga2/FishVillaga2 (3).png<>uid://b60yyxkkppyy6::::res://Game art/NPCs/FishVillaga2/FishVillaga2 (4).png
+NPC_Fishing_Leader.gd::GDScript::-1::1743183606::0::1::::<>StaticBody2D<>::
+NPC_Fishing_Leader.tscn::PackedScene::5700941986480665475::1743183606::0::1::::<><>::uid://b2gusfjhsfwh4::::res://Game art/NPCs/FishingCaptain/FishingCaptain1.png<>res://NPC_Fishing_Leader.gd<>uid://jhkbk2j7wltr::::res://Game art/NPCs/FishingCaptain/FishingCaptain2.png<>uid://dgcg3s2iowsur::::res://Game art/NPCs/FishingCaptain/FishingCaptain3.png<>uid://h25fndij5cvq::::res://Game art/NPCs/FishingCaptain/FishingCaptain4.png<>uid://b6bxowu1am5cc::::res://Game art/NPCs/FishingCaptain/FishingCaptain5.png<>uid://c1pb6nl5il8u1::::res://Game art/NPCs/FishingCaptain/FishingCaptain6.png
+NPC_Fishing_Sus.gd::GDScript::-1::1743183606::0::1::::<>StaticBody2D<>::
+NPC_Fishing_Sus.tscn::PackedScene::5879325299812811927::1743183606::0::1::::<><>::res://NPC_Fishing_Sus.gd<>uid://xcwlsorgqqvq::::res://Game art/NPCs/SusFisha/SV-SusFisha1 (1).png<>uid://cher6i167sfaw::::res://Game art/NPCs/SusFisha/SV-SusFisha1 (2).png
+NPC_Viking_1.gd::GDScript::-1::1743183606::0::1::::<>StaticBody2D<>::
+NPC_Viking_1.tscn::PackedScene::5287508543140977516::1743183606::0::1::::<><>::res://NPC_Viking_1.gd<>uid://cs3u0wd6100ek::::res://Game art/NPCs/VikingNPC/VikingNPC1.png<>uid://ho7r3shp127l::::res://Game art/NPCs/VikingNPC/VikingNPC2.png<>uid://cpqwam582u2oj::::res://Game art/NPCs/VikingNPC/VikingNPC3.png<>uid://cv4fwi5ka44pd::::res://Game art/NPCs/VikingNPC/VikingNPC4.png
+NPC_Viking_2.gd::GDScript::-1::1743183606::0::1::::<>StaticBody2D<>::
+NPC_Viking_2.tscn::PackedScene::781975341660678262::1743183606::0::1::::<><>::uid://dt4alrjs8mcet::::res://Game art/NPCs/VikingNPC2/VikingNPC2(1).png<>res://NPC_Viking_2.gd<>uid://i5narngdhptd::::res://Game art/NPCs/VikingNPC2/VikingNPC2(2).png<>uid://cp3nah4pip5vv::::res://Game art/NPCs/VikingNPC2/VikingNPC2(3).png<>uid://blu82igqn7vh8::::res://Game art/NPCs/VikingNPC2/VikingNPC2(4).png
+NPC_Viking_3.gd::GDScript::-1::1743183606::0::1::::<>StaticBody2D<>::
+NPC_Viking_3.tscn::PackedScene::7849968087968853883::1743183606::0::1::::<><>::res://NPC_Viking_3.gd<>uid://ctjwrxshe0lrp::::res://Game art/NPCs/VikingNPC3/VikingNPC3 (1,5).png<>uid://dpfqq80oe2xhn::::res://Game art/NPCs/VikingNPC3/VikingNPC3 (2,4).png<>uid://c7svkbviamw18::::res://Game art/NPCs/VikingNPC3/VikingNPC3 (3).png<>uid://beqgqkw5xhdp6::::res://Game art/NPCs/VikingNPC3/VikingNPC3 (6,8).png<>uid://bi6ve54hjcor4::::res://Game art/NPCs/VikingNPC3/VikingNPC3 (7).png
+NPC_Viking_Leader.gd::GDScript::-1::1743183606::0::1::::<>StaticBody2D<>::
+NPC_Viking_Leader.tscn::PackedScene::1020093267681913655::1743183606::0::1::::<><>::res://NPC_Viking_Leader.gd<>uid://c16k7idotulkx::::res://Game art/NPCs/VikingIdle/VikingIdle1.png<>uid://b7vli2x8nbh8b::::res://Game art/NPCs/VikingIdle/VikingIdle2.png
+player.gd::GDScript::-1::1743183608::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::4415612183735405380::1743183608::0::1::::<><>::res://player.gd<>uid://bbkfulrlciwqv::::res://Game art/player/Idle/Idle1.png<>uid://cs0hqiby4bgfc::::res://Game art/player/SLASHIN/Slash1,2.png<>uid://b5hm5rm5w6ocf::::res://Game art/player/SLASHIN/Slash3.png<>uid://bryjr8aeds2l8::::res://Game art/player/Idle/Idle2,4.png<>uid://dm8g5oftpunay::::res://Game art/player/Idle/Idle3.png<>uid://d4a8kf5m8maja::::res://Game art/player/SLASHIN/Slash4.png<>uid://ckkaa3dx3fqr::::res://Game art/player/SLASHIN/Slash5.png<>uid://h213ihbi2u82::::res://Game art/player/Idle/Idle5.png<>uid://cu05whthohiq7::::res://Game art/player/Idle/Idle6,8.png<>uid://bquefr7f00r4::::res://Game art/player/SLASHIN/Slash6.png<>uid://80plrohcqc88::::res://Game art/player/Idle/Idle7.png<>uid://duergfyn3gtu::::res://Game art/player/Impatient_Idle/Impatient_Idle1.png<>uid://c4mx57h06yjoo::::res://Game art/player/Impatient_Idle/Impatient_Idle2.png<>uid://b0btu6bbwmf5n::::res://Game art/player/Impatient_Idle/Impatient_Idle3.png<>uid://bt61vjt6cuybf::::res://Game art/player/Impatient_Idle/Impatient_Idle4.png<>uid://dlxbu6cy2lxmc::::res://Game art/player/DownRun/DownRun1,5.png<>uid://byfttc8prju78::::res://Game art/player/DownRun/DownRun2.png<>uid://c1wlhixbuwsq7::::res://Game art/player/DownRun/DownRun3.png<>uid://b1jptn1dlvdgo::::res://Game art/player/DownRun/DownRun4.png<>uid://da8q4t28acvf0::::res://Game art/player/DownRun/DownRun6.png<>uid://3skthqdv6stl::::res://Game art/player/DownRun/DownRun7.png<>uid://bf002y5mib5gu::::res://Game art/player/DownRun/DownRun8.png<>uid://bi4js5ad0yepw::::res://Game art/player/Run/Run1.png<>uid://6iin7fuplnaw::::res://Game art/player/Run/Run2.png<>uid://cm4a4w0l4ud5e::::res://Game art/player/Run/Run3.png<>uid://cogpd6rowcnsw::::res://Game art/player/Run/Run4.png<>uid://dvh8fet8bmeuj::::res://Game art/player/Run/Run5.png<>uid://8msv64dduj1w::::res://Game art/player/Run/Run6.png<>uid://bwi240rsmg6ya::::res://Game art/player/Run/Run7.png<>uid://x7d0gye8rwln::::res://Game art/player/Run/Run8.png<>uid://y8wurcpe6upp::::res://Game art/player/Run/Run9.png<>uid://bophlihyyiqch::::res://Game art/player/Run/Run10.png<>uid://vkei1dy8ih27::::res://Game art/player/Run/Run11.png<>uid://bqm1d2c8fiv0t::::res://Game art/player/Run/Run12.png<>uid://bp1vcgykltxgk::::res://Game art/player/UpRun/UpRun1,5.png<>uid://ywuud57v4pkg::::res://Game art/player/UpRun/UpRun2.png<>uid://cru3qk2l2c1t6::::res://Game art/player/UpRun/UpRun3.png<>uid://b5ng7rm7e8nci::::res://Game art/player/UpRun/UpRun4.png<>uid://dau1shc3guo14::::res://Game art/player/UpRun/UpRun6.png<>uid://dqtyc1axdwcdb::::res://Game art/player/UpRun/UpRun7.png<>uid://dywa2xo00h2pl::::res://Game art/player/UpRun/UpRun8.png<>uid://bwx8kbca5n8ns::::res://actionable_finder.tscn
+README.md::TextFile::-1::1743183608::0::1::::<><>::
+state.gd::GDScript::-1::1743183608::0::1::::<>Node<>::
+state.tscn::PackedScene::4821504550729458010::1743183608::0::1::::<><>::res://state.gd<>uid://b357qtufnh36o::::res://player.tscn<>uid://bwx8kbca5n8ns::::res://actionable_finder.tscn
+TileMap.tscn::PackedScene::2447737474135222539::1743183606::0::1::::<><>::uid://dvegy6c40mvmp::::res://Game art/Tilemap/tilemap-with-grass-trees.png<>uid://dp1skqmo4uvd4::::res://Game art/Tilemap/tilemap-lake-LK.png
+::res://addons/::1743183606
+::res://addons/dialogue_manager/::1743183606
+constants.gd::GDScript::-1::1743183606::0::1::::<>Node<>::
+dialogue_label.gd::GDScript::-1::1743183606::0::1::::DialogueLabel<>RichTextLabel<>res://addons/dialogue_manager/assets/icon.svg::
+dialogue_label.tscn::PackedScene::5518490004210093266::1743183606::0::1::::<><>::res://addons/dialogue_manager/dialogue_label.gd
+dialogue_line.gd::GDScript::-1::1743183606::0::1::::DialogueLine<>RefCounted<>::
+dialogue_manager.gd::GDScript::-1::1743183606::0::1::::<>Node<>::
+dialogue_reponses_menu.gd::GDScript::-1::1743183606::0::1::::DialogueResponsesMenu<>Container<>res://addons/dialogue_manager/assets/responses_menu.svg::
+dialogue_resource.gd::GDScript::-1::1743183606::0::1::::DialogueResource<>Resource<>res://addons/dialogue_manager/assets/icon.svg::
+dialogue_response.gd::GDScript::-1::1743183606::0::1::::DialogueResponse<>RefCounted<>::
+editor_translation_parser_plugin.gd::GDScript::-1::1743183606::0::1::::<>EditorTranslationParserPlugin<>::
+import_plugin.gd::GDScript::-1::1743183606::0::1::::<>EditorImportPlugin<>::
+inspector_plugin.gd::GDScript::-1::1743183606::0::1::::<>EditorInspectorPlugin<>::
+plugin.cfg::TextFile::-1::1743183606::0::1::::<><>::
+plugin.gd::GDScript::-1::1743183606::0::1::::<>EditorPlugin<>::
+settings.gd::GDScript::-1::1743183606::0::1::::<>Node<>::
+test_scene.gd::GDScript::-1::1743183606::0::1::::BaseDialogueTestScene<>Node2D<>::
+test_scene.tscn::PackedScene::-1::1743183606::0::1::::<><>::res://addons/dialogue_manager/test_scene.gd
+::res://addons/dialogue_manager/assets/::1743183606
+icon.svg::CompressedTexture2D::9148339284877624195::1743183606::1743183624::1::::<><>::
+responses_menu.svg::CompressedTexture2D::8371359403825774630::1743183606::1743183624::1::::<><>::
+update.svg::CompressedTexture2D::9126631778427806641::1743183606::1743183624::1::::<><>::
+::res://addons/dialogue_manager/components/::1743183606
+code_edit.gd::GDScript::-1::1743183606::0::1::::<>CodeEdit<>::
+code_edit.tscn::PackedScene::5379618807048408118::1743183606::0::1::::<><>::res://addons/dialogue_manager/components/code_edit_syntax_highlighter.gd<>res://addons/dialogue_manager/components/code_edit.gd
+code_edit_syntax_highlighter.gd::GDScript::-1::1743183606::0::1::::<>SyntaxHighlighter<>::
+dialogue_cache.gd::GDScript::-1::1743183606::0::1::::<>Node<>::
+download_update_panel.gd::GDScript::-1::1743183606::0::1::::<>Control<>::
+download_update_panel.tscn::PackedScene::1130642722554629364::1743183606::0::1::::<><>::res://addons/dialogue_manager/components/download_update_panel.gd<>uid://d3baj6rygkb3f::::res://addons/dialogue_manager/assets/update.svg
+errors_panel.gd::GDScript::-1::1743183606::0::1::::<>HBoxContainer<>::
+errors_panel.tscn::PackedScene::6105315990352960875::1743183606::0::1::::<><>::res://addons/dialogue_manager/components/errors_panel.gd
+files_list.gd::GDScript::-1::1743183606::0::1::::<>VBoxContainer<>::
+files_list.tscn::PackedScene::8113335055803740416::1743183606::0::1::::<><>::res://addons/dialogue_manager/components/files_list.gd<>uid://d3lr2uas6ax8v::::res://addons/dialogue_manager/assets/icon.svg
+find_in_files.gd::GDScript::-1::1743183606::0::1::::<>Control<>::
+find_in_files.tscn::PackedScene::1783514634430556025::1743183606::0::1::::<><>::res://addons/dialogue_manager/components/find_in_files.gd
+parser.gd::GDScript::-1::1743183606::0::1::::DialogueManagerParser<>Object<>::
+parse_result.gd::GDScript::-1::1743183606::0::1::::DialogueManagerParseResult<>RefCounted<>::
+resolved_line_data.gd::GDScript::-1::1743183606::0::1::::<>RefCounted<>::
+resolved_tag_data.gd::GDScript::-1::1743183606::0::1::::<>RefCounted<>::
+search_and_replace.gd::GDScript::-1::1743183606::0::1::::<>VBoxContainer<>::
+search_and_replace.tscn::PackedScene::458254375860855630::1743183606::0::1::::<><>::res://addons/dialogue_manager/components/search_and_replace.gd
+title_list.gd::GDScript::-1::1743183606::0::1::::<>VBoxContainer<>::
+title_list.tscn::PackedScene::6134415340044566558::1743183606::0::1::::<><>::res://addons/dialogue_manager/components/title_list.gd
+update_button.gd::GDScript::-1::1743183606::0::1::::<>Button<>::
+update_button.tscn::PackedScene::5825087957514786930::1743183606::0::1::::<><>::res://addons/dialogue_manager/components/update_button.gd<>uid://qdxrxv3c3hxk::::res://addons/dialogue_manager/components/download_update_panel.tscn
+::res://addons/dialogue_manager/components/editor_property/::1743183606
+editor_property.gd::GDScript::-1::1743183606::0::1::::<>EditorProperty<>::
+editor_property_control.gd::GDScript::-1::1743183606::0::1::::<>HBoxContainer<>::
+editor_property_control.tscn::PackedScene::1689506734256736329::1743183606::0::1::::<><>::res://addons/dialogue_manager/components/editor_property/editor_property_control.gd<>uid://b16uuqjuof3n5::::res://addons/dialogue_manager/components/editor_property/resource_button.tscn<>uid://dnufpcdrreva3::::res://addons/dialogue_manager/components/files_list.tscn
+resource_button.gd::GDScript::-1::1743183606::0::1::::<>Button<>::
+resource_button.tscn::PackedScene::4276577239595711888::1743183606::0::1::::<><>::res://addons/dialogue_manager/components/editor_property/resource_button.gd
+::res://addons/dialogue_manager/example_balloon/::1743183608
+example_balloon.gd::GDScript::-1::1743183608::0::1::::DialogueManagerExampleBalloon<>CanvasLayer<>::
+example_balloon.tscn::PackedScene::2304415056852043862::1743183608::0::1::::<><>::res://addons/dialogue_manager/example_balloon/example_balloon.gd<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/dialogue_label.tscn<>res://addons/dialogue_manager/dialogue_reponses_menu.gd<>uid://caxtqfx3lryd3::::res://state.tscn
+small_example_balloon.tscn::PackedScene::1883859960814163368::1743183606::0::1::::<><>::res://addons/dialogue_manager/example_balloon/example_balloon.gd<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/dialogue_label.tscn<>res://addons/dialogue_manager/dialogue_reponses_menu.gd
+::res://addons/dialogue_manager/l10n/::1743183606
+en.mo::Translation::-1::1743183606::0::1::::<><>::
+en.po::Translation::-1::1743183606::0::1::::<><>::
+es.po::Translation::-1::1743183606::0::1::::<><>::
+uk.po::Translation::-1::1743183606::0::1::::<><>::
+zh.po::Translation::-1::1743183606::0::1::::<><>::
+zh_TW.po::Translation::-1::1743183606::0::1::::<><>::
+::res://addons/dialogue_manager/utilities/::1743183606
+builtins.gd::GDScript::-1::1743183606::0::1::::<>Object<>::
+::res://addons/dialogue_manager/views/::1743183606
+main_view.gd::GDScript::-1::1743183606::0::1::::<>Control<>::
+main_view.tscn::PackedScene::4884668666408697448::1743183606::0::1::::<><>::res://addons/dialogue_manager/views/main_view.gd<>uid://civ6shmka5e8u::::res://addons/dialogue_manager/components/code_edit.tscn<>uid://dnufpcdrreva3::::res://addons/dialogue_manager/components/files_list.tscn<>uid://ctns6ouwwd68i::::res://addons/dialogue_manager/components/title_list.tscn<>uid://co8yl23idiwbi::::res://addons/dialogue_manager/components/update_button.tscn<>uid://gr8nakpbrhby::::res://addons/dialogue_manager/components/search_and_replace.tscn<>uid://cs8pwrxr5vxix::::res://addons/dialogue_manager/components/errors_panel.tscn<>res://addons/dialogue_manager/components/code_edit_syntax_highlighter.gd<>uid://cpg4lg1r3ff6m::::res://addons/dialogue_manager/views/settings_view.tscn<>uid://0n7hwviyyly4::::res://addons/dialogue_manager/components/find_in_files.tscn
+settings_view.gd::GDScript::-1::1743183606::0::1::::<>TabContainer<>::
+settings_view.tscn::PackedScene::5839841081119266502::1743183606::0::1::::<><>::res://addons/dialogue_manager/views/settings_view.gd
+::res://dialogue/::1743183606
+bird1.dialogue::Resource::8389428780094807318::1743183606::1743183623::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+example.dialogue::Resource::5390958403638111064::1743183606::1743183623::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+::res://Game art/::1743183606
+::res://Game art/NPCs/::1743183608
+::res://Game art/NPCs/EyeSusFishaFV/::1743183606
+EyeSusFishaFV (1).png::CompressedTexture2D::7705000293788545465::1743183606::1743183624::1::::<><>::
+EyeSusFishaFV (2).png::CompressedTexture2D::5954076501069113532::1743183606::1743183624::1::::<><>::
+::res://Game art/NPCs/FarmerLeader(Horse)/::1743183606
+FarmerLeader(Horse) (1).png::CompressedTexture2D::5727259143239784001::1743183606::1743183624::1::::<><>::
+FarmerLeader(Horse) (2).png::CompressedTexture2D::6866807747128273466::1743183606::1743183624::1::::<><>::
+FarmerLeader(Horse) (3).png::CompressedTexture2D::8410902757525848011::1743183606::1743183624::1::::<><>::
+FarmerLeader(Horse) (4).png::CompressedTexture2D::9047654402546709770::1743183606::1743183624::1::::<><>::
+::res://Game art/NPCs/FarmerNPC1/::1743183606
+FarmerNPC1 (1).png::CompressedTexture2D::237135646215580880::1743183606::1743183624::1::::<><>::
+FarmerNPC1 (2).png::CompressedTexture2D::6913654706731286169::1743183606::1743183624::1::::<><>::
+::res://Game art/NPCs/FarmerNPC2/::1743183606
+FarmerNPC1 (1).png::CompressedTexture2D::1450830573350297431::1743183606::1743183624::1::::<><>::
+FarmerNPC1 (2).png::CompressedTexture2D::8316084220871504252::1743183606::1743183624::1::::<><>::
+FarmerNPC1 (3).png::CompressedTexture2D::5654382491265310573::1743183606::1743183624::1::::<><>::
+FarmerNPC1 (4).png::CompressedTexture2D::2709258599415537841::1743183606::1743183624::1::::<><>::
+::res://Game art/NPCs/FarmerNPC3/::1743183606
+FarmerNPC3 (1).png::CompressedTexture2D::2303715296837833280::1743183606::1743183624::1::::<><>::
+FarmerNPC3 (2).png::CompressedTexture2D::3194130648234672138::1743183606::1743183624::1::::<><>::
+::res://Game art/NPCs/FishingCaptain/::1743183606
+FishingCaptain1.png::CompressedTexture2D::5693700373911745607::1743183606::1743183624::1::::<><>::
+FishingCaptain2.png::CompressedTexture2D::8668256638658500447::1743183606::1743183624::1::::<><>::
+FishingCaptain3.png::CompressedTexture2D::7829380365855336201::1743183606::1743183624::1::::<><>::
+FishingCaptain4.png::CompressedTexture2D::2752393164542898731::1743183606::1743183624::1::::<><>::
+FishingCaptain5.png::CompressedTexture2D::5555300702126475739::1743183606::1743183624::1::::<><>::
+FishingCaptain6.png::CompressedTexture2D::4018275606205122071::1743183606::1743183624::1::::<><>::
+::res://Game art/NPCs/FishVillaga1/::1743183606
+FishVillaga1 (1).png::CompressedTexture2D::4224983628141618614::1743183606::1743183624::1::::<><>::
+FishVillaga1 (2).png::CompressedTexture2D::8142569741763755203::1743183606::1743183624::1::::<><>::
+::res://Game art/NPCs/FishVillaga2/::1743183606
+FishVillaga2 (1).png::CompressedTexture2D::7970866359092694875::1743183606::1743183624::1::::<><>::
+FishVillaga2 (2).png::CompressedTexture2D::6324022490385720806::1743183606::1743183624::1::::<><>::
+FishVillaga2 (3).png::CompressedTexture2D::5443889778978723597::1743183606::1743183624::1::::<><>::
+FishVillaga2 (4).png::CompressedTexture2D::2461873105542763559::1743183606::1743183624::1::::<><>::
+::res://Game art/NPCs/Medieval King/::1743183606
+MedievalKing (1).png::CompressedTexture2D::7738905067999964172::1743183606::1743183624::1::::<><>::
+MedievalKing (2).png::CompressedTexture2D::491008754919292807::1743183606::1743183624::1::::<><>::
+::res://Game art/NPCs/SusFisha/::1743183606
+FV-SusFisha1 (1).png::CompressedTexture2D::1165555171378956942::1743183606::1743183624::1::::<><>::
+FV-SusFisha1 (2).png::CompressedTexture2D::6172179019942261883::1743183606::1743183624::1::::<><>::
+SV-SusFisha1 (1).png::CompressedTexture2D::2332399399470680007::1743183606::1743183624::1::::<><>::
+SV-SusFisha1 (2).png::CompressedTexture2D::1589441290719657465::1743183606::1743183624::1::::<><>::
+::res://Game art/NPCs/VikingIdle/::1743183606
+VikingIdle1.png::CompressedTexture2D::6662411753167018343::1743183606::1743183624::1::::<><>::
+VikingIdle2.png::CompressedTexture2D::4676499241394808247::1743183606::1743183624::1::::<><>::
+::res://Game art/NPCs/VikingNPC/::1743183606
+VikingNPC1.png::CompressedTexture2D::7829550617787013782::1743183606::1743183624::1::::<><>::
+VikingNPC2.png::CompressedTexture2D::4044026648745994753::1743183606::1743183624::1::::<><>::
+VikingNPC3.png::CompressedTexture2D::7892123153297197991::1743183606::1743183624::1::::<><>::
+VikingNPC4.png::CompressedTexture2D::3981418289526748120::1743183606::1743183624::1::::<><>::
+::res://Game art/NPCs/VikingNPC2/::1743183606
+VikingNPC2(1).png::CompressedTexture2D::8412871203142336151::1743183606::1743183624::1::::<><>::
+VikingNPC2(2).png::CompressedTexture2D::8161615865116766146::1743183606::1743183624::1::::<><>::
+VikingNPC2(3).png::CompressedTexture2D::4224611952712970992::1743183606::1743183624::1::::<><>::
+VikingNPC2(4).png::CompressedTexture2D::3535411316858198003::1743183606::1743183624::1::::<><>::
+::res://Game art/NPCs/VikingNPC3/::1743183606
+VikingNPC3 (1,5).png::CompressedTexture2D::45206298254927718::1743183606::1743183624::1::::<><>::
+VikingNPC3 (2,4).png::CompressedTexture2D::1683087220560108716::1743183606::1743183624::1::::<><>::
+VikingNPC3 (3).png::CompressedTexture2D::2357457141324249921::1743183606::1743183624::1::::<><>::
+VikingNPC3 (6,8).png::CompressedTexture2D::2941801083578341227::1743183606::1743183624::1::::<><>::
+VikingNPC3 (7).png::CompressedTexture2D::5414199964909064128::1743183606::1743183624::1::::<><>::
+::res://Game art/player/::1743183606
+::res://Game art/player/DownRun/::1743183606
+DownRun1,5.png::CompressedTexture2D::7978918084752352510::1743183606::1743183624::1::::<><>::
+DownRun2.png::CompressedTexture2D::4082462529452806057::1743183606::1743183624::1::::<><>::
+DownRun3.png::CompressedTexture2D::6643848455832475480::1743183606::1743183624::1::::<><>::
+DownRun4.png::CompressedTexture2D::4230855426164472734::1743183606::1743183623::1::::<><>::
+DownRun6.png::CompressedTexture2D::7228410818023625223::1743183606::1743183623::1::::<><>::
+DownRun7.png::CompressedTexture2D::2003087913995771265::1743183606::1743183623::1::::<><>::
+DownRun8.png::CompressedTexture2D::2790541794449877088::1743183606::1743183623::1::::<><>::
+::res://Game art/player/DownSlash/::1743183606
+SlashDown1.png::CompressedTexture2D::6407753535955269720::1743183606::1743183623::1::::<><>::
+SlashDown2.png::CompressedTexture2D::1355328097323756311::1743183606::1743183623::1::::<><>::
+SlashDown3.png::CompressedTexture2D::1882236593684301248::1743183606::1743183623::1::::<><>::
+SlashDown4.png::CompressedTexture2D::2589311429779034706::1743183606::1743183623::1::::<><>::
+SlashDown5.png::CompressedTexture2D::1170010665339277978::1743183606::1743183623::1::::<><>::
+SlashDown6.png::CompressedTexture2D::5576922651867613802::1743183606::1743183623::1::::<><>::
+::res://Game art/player/Idle/::1743183606
+Idle1.png::CompressedTexture2D::2477593210234990861::1743183606::1743183623::1::::<><>::
+Idle2,4.png::CompressedTexture2D::3629754636525412163::1743183606::1743183623::1::::<><>::
+Idle3.png::CompressedTexture2D::8070071260328453372::1743183606::1743183623::1::::<><>::
+Idle5.png::CompressedTexture2D::548689179924749445::1743183606::1743183623::1::::<><>::
+Idle6,8.png::CompressedTexture2D::6230088878599022360::1743183606::1743183623::1::::<><>::
+Idle7.png::CompressedTexture2D::2368772597376581131::1743183606::1743183623::1::::<><>::
+::res://Game art/player/Impatient_Idle/::1743183606
+Impatient_Idle1.png::CompressedTexture2D::252127636435795362::1743183606::1743183623::1::::<><>::
+Impatient_Idle2.png::CompressedTexture2D::6834542123327735838::1743183606::1743183623::1::::<><>::
+Impatient_Idle3.png::CompressedTexture2D::4144397120982603325::1743183606::1743183623::1::::<><>::
+Impatient_Idle4.png::CompressedTexture2D::3785621070148920167::1743183606::1743183623::1::::<><>::
+::res://Game art/player/Run/::1743183606
+Run1.png::CompressedTexture2D::3008378560761447380::1743183606::1743183623::1::::<><>::
+Run2.png::CompressedTexture2D::2192879815474805074::1743183606::1743183623::1::::<><>::
+Run3.png::CompressedTexture2D::5675027428606713756::1743183606::1743183623::1::::<><>::
+Run4.png::CompressedTexture2D::5768789212267344926::1743183606::1743183623::1::::<><>::
+Run5.png::CompressedTexture2D::8649691242433086225::1743183606::1743183623::1::::<><>::
+Run6.png::CompressedTexture2D::2342136453809880350::1743183606::1743183623::1::::<><>::
+Run7.png::CompressedTexture2D::3948782752769803036::1743183606::1743183624::1::::<><>::
+Run8.png::CompressedTexture2D::1680630640072521075::1743183606::1743183624::1::::<><>::
+Run9.png::CompressedTexture2D::1754029099590390005::1743183606::1743183623::1::::<><>::
+Run10.png::CompressedTexture2D::3400475255742057483::1743183606::1743183624::1::::<><>::
+Run11.png::CompressedTexture2D::1494868019637972578::1743183606::1743183624::1::::<><>::
+Run12.png::CompressedTexture2D::3535800136870432233::1743183606::1743183623::1::::<><>::
+::res://Game art/player/SLASHIN/::1743183606
+Slash1,2.png::CompressedTexture2D::6088304011234978908::1743183606::1743183623::1::::<><>::
+Slash3.png::CompressedTexture2D::4507319727671137689::1743183606::1743183623::1::::<><>::
+Slash4.png::CompressedTexture2D::9196760344833263906::1743183606::1743183623::1::::<><>::
+Slash5.png::CompressedTexture2D::161628678166999669::1743183606::1743183623::1::::<><>::
+Slash6.png::CompressedTexture2D::104440661073990811::1743183606::1743183623::1::::<><>::
+::res://Game art/player/UpRun/::1743183606
+UpRun1,5.png::CompressedTexture2D::3494206140990280890::1743183606::1743183623::1::::<><>::
+UpRun2.png::CompressedTexture2D::1731198819032856526::1743183606::1743183623::1::::<><>::
+UpRun3.png::CompressedTexture2D::6009068480293088237::1743183606::1743183623::1::::<><>::
+UpRun4.png::CompressedTexture2D::4519345263893601608::1743183606::1743183623::1::::<><>::
+UpRun6.png::CompressedTexture2D::7202160764296787785::1743183606::1743183623::1::::<><>::
+UpRun7.png::CompressedTexture2D::8322968872686156591::1743183606::1743183623::1::::<><>::
+UpRun8.png::CompressedTexture2D::8889260056250743645::1743183606::1743183623::1::::<><>::
+::res://Game art/player/UpSlash/::1743183606
+SlashUp1.png::CompressedTexture2D::4551510552751183236::1743183606::1743183623::1::::<><>::
+SlashUp2.png::CompressedTexture2D::2108727128799484289::1743183606::1743183623::1::::<><>::
+SlashUp3.png::CompressedTexture2D::8758979489772989750::1743183606::1743183623::1::::<><>::
+SlashUp4.png::CompressedTexture2D::7235142529196699056::1743183606::1743183623::1::::<><>::
+SlashUp5.png::CompressedTexture2D::6819842980393205390::1743183606::1743183623::1::::<><>::
+SlashUp6.png::CompressedTexture2D::3302672568615352381::1743183606::1743183623::1::::<><>::
+::res://Game art/Tilemap/::1743183606
+tilemap-lake-LK.png::CompressedTexture2D::7585159635528921438::1743183606::1743183623::1::::<><>::
+tilemap-with-grass-trees.png::CompressedTexture2D::6859699696553746950::1743183606::1743183623::1::::<><>::
+tilemap-with-midtrees.png::CompressedTexture2D::3486982331843049421::1743183606::1743183623::1::::<><>::

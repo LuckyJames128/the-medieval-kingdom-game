@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byfttc8prju78"
-path="res://.godot/imported/DownRun2.png-5c16786873711c19305c911e009c6a66.ctex"
+path="res://.godot/imported/DownRun2.png-801b7b0125fe6f8f9aefcae1b30e8a9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game art/DownRun/DownRun2.png"
-dest_files=["res://.godot/imported/DownRun2.png-5c16786873711c19305c911e009c6a66.ctex"]
+source_file="res://Game art/player/DownRun/DownRun2.png"
+dest_files=["res://.godot/imported/DownRun2.png-801b7b0125fe6f8f9aefcae1b30e8a9a.ctex"]
 
 [params]
 
