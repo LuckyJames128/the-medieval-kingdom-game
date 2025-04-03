@@ -3,31 +3,29 @@ extends CharacterBody2D
 @export var speed = 200
 var timer_check = false
 var impatient_on = false
-
-@onready var actionable_finder: Area2D = $actionable_finder
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
-	
+	print("ready")
+	var callable = Callable.create(self, "_on_dialogue_ended")
+	DialogueManager.connect("dialogue_ended", callable)
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var velocity = Vector2.ZERO # The player's movement vector.
-	if Input.is_action_just_pressed("dialogue"):
-		var actionables = actionable_finder.get_overlapping_areas()
-		if actionables.size() > 0:
-			actionables[0].action()
-			return
 	
-	if Input.is_action_pressed("move_right"):
-		velocity.x += 1
-	if Input.is_action_pressed("move_left"):
-		velocity.x -= 1
-	if Input.is_action_pressed("move_down"):
-		velocity.y += 1
-	if Input.is_action_pressed("move_up"):
-		velocity.y -= 1
+	if $actionable_finder.can_move == true:
+		if Input.is_action_pressed("move_right"):
+			print("right")
+			velocity.x += 1
+		if Input.is_action_pressed("move_left"):
+			print("left")
+			velocity.x -= 1
+		if Input.is_action_pressed("move_down"):
+			velocity.y += 1
+		if Input.is_action_pressed("move_up"):
+			velocity.y -= 1
 
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
@@ -58,8 +56,25 @@ func _process(delta):
 			$AnimatedSprite2D.flip_v = false
 		
 	move_and_slide()
+	
+	# DEBUG
+	#if $actionable_finder.can_move == false:
+		#print("IM NOT MOVING")
+		#velocity.x = 0
+		#velocity.y = 0
+	#if $actionable_finder.can_move == true:
+		#print("IM MOVING")
+	#if $actionable_finder.can_move == not $actionable_finder.can_move:
+		#print("OH NO")
 
 func _on_idle_timer_timeout():
 	$AnimatedSprite2D.animation = "impatient_idle"
 	impatient_on = true
 	
+
+func _on_dialogue_ended(resource: DialogueResource):
+	print("stop")
+	$actionable_finder.can_move = true
+
+func _on_state_dialogue_started() -> void:
+	print("start")
