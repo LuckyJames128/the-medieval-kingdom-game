@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+@onready var Quest_F_B = "0"
 @export var speed = 200
 var timer_check = false
 var impatient_on = false
@@ -75,6 +75,8 @@ func _on_idle_timer_timeout():
 func _on_dialogue_ended(resource: DialogueResource):
 	print("stop")
 	$actionable_finder.can_move = true
+	Quest_F_B = 1
+	print(Quest_F_B)
 
 func _on_state_dialogue_started() -> void:
 	print("start")
