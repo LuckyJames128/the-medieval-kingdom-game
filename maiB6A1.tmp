@@ -22,7 +22,6 @@ script = ExtResource("1_w32lg")
 
 [node name="player" parent="TileMap" instance=ExtResource("3_52d8t")]
 position = Vector2(1490, 481)
-speed = null
 
 [node name="Camera2D" type="Camera2D" parent="TileMap/player"]
 zoom = Vector2(3, 3)

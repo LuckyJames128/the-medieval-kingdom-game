@@ -8,12 +8,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Input.is_action_pressed("dialogue"):
-		var actionables = get_overlapping_areas()
-		if actionables.size() > 0:
-			actionables[0].action()
-			can_move = false
-			return
+	pass
 
 
 func _on_state_dialogue_started() -> void:

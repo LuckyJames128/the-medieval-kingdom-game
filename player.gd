@@ -1,8 +1,12 @@
 extends CharacterBody2D
-@onready var Quest_F_B = "0"
+@onready var Quest_F_B = 0
 @export var speed = 200
 var timer_check = false
 var impatient_on = false
+signal Q_FishL
+signal Q_Fish1
+signal Q_FishB
+signal Q_FishS
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	print("ready")
@@ -17,15 +21,26 @@ func _process(delta):
 	
 	if $actionable_finder.can_move == true:
 		if Input.is_action_pressed("move_right"):
-			print("right")
+			#print("right")
 			velocity.x += 1
 		if Input.is_action_pressed("move_left"):
-			print("left")
+			#print("left")
 			velocity.x -= 1
 		if Input.is_action_pressed("move_down"):
 			velocity.y += 1
 		if Input.is_action_pressed("move_up"):
 			velocity.y -= 1
+		if Input.is_action_pressed("dialogue"):
+			var actionables = $actionable_finder.get_overlapping_areas()
+			if actionables.size() > 0:
+				actionables[0].action()
+				var act_item = String(from: get_node(actionables[0]))
+				print(actionables[0])
+				if actionables.has("Actionable:<Area2D#57227085666>") == true:
+					Q_FishB.emit()
+					print("ah")
+				$actionable_finder.can_move = false
+				return
 
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
@@ -75,8 +90,7 @@ func _on_idle_timer_timeout():
 func _on_dialogue_ended(resource: DialogueResource):
 	print("stop")
 	$actionable_finder.can_move = true
-	Quest_F_B = 1
-	print(Quest_F_B)
+	
 
 func _on_state_dialogue_started() -> void:
 	print("start")
