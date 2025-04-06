@@ -58,14 +58,14 @@ func _process(delta):
 	move_and_slide()
 	
 	# DEBUG
-	if $actionable_finder.can_move == false:
-		print("IM NOT MOVING")
-		velocity.x = 0
-		velocity.y = 0
-	if $actionable_finder.can_move == true:
-		print("IM MOVING")
-	if $actionable_finder.can_move == not $actionable_finder.can_move:
-		print("OH NO")
+	#if $actionable_finder.can_move == false:
+		#print("IM NOT MOVING")
+		#velocity.x = 0
+		#velocity.y = 0
+	#if $actionable_finder.can_move == true:
+		#print("IM MOVING")
+	#if $actionable_finder.can_move == not $actionable_finder.can_move:
+		#print("OH NO")
 
 func _on_idle_timer_timeout():
 	$AnimatedSprite2D.animation = "impatient_idle"
